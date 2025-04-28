@@ -44,16 +44,3 @@ function getCookie(name) {
 }
 
 console.log(document.cookie);
-
-
-
-const close = document.getElementById("close");
-
-close.addEventListener("click", hideIframe);
-
-function hideIframe() {
-  if ((iframe.style.display = "block")) iframe.style.display = "none";
-  else iframe.style.display = "block";
-  if ((overlay.style.display = "block")) overlay.style.display = "none";
-  else overlay.style.display = "block";
-}
