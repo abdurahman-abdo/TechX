@@ -86,9 +86,11 @@ const overlay = document.getElementById("overlay");
 const closeButton = document.getElementById("close");
 
 button.addEventListener("click", () => {
-  iframe.style.display = "block"; overlay.style.display = "block";
+  iframe.style.display = "block"; 
+  overlay.style.display = "block";
 });
 
 closeButton.addEventListener("click", () => {
- iframe.style.display = "none"; overlay.style.display = "none";
+  iframe.style.display = "none"; 
+  overlay.style.display = "none";
 });
