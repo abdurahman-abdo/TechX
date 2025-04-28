@@ -48,7 +48,6 @@ console.log(document.cookie);
 const closeButton = document.getElementById("close");
 const iframe = document.getElementById("signin-iframe");
 
-  closeButton.addEventListener("click", (event) => {
-    event.preventDefault();
-    iframe.style.display = "none";
-  });
+closeButton.addEventListener("click", (event) => {
+  iframe.style.display = "none";
+});
