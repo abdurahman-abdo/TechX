@@ -89,13 +89,6 @@ button.addEventListener("click", () => {
   iframe.style.display = "block";
 });
 
-// function showIframe() {
-//   if ((iframe.style.display = "none")) iframe.style.display = "block";
-//   else iframe.style.display = "none";
-//   if ((overlay.style.display = "none")) overlay.style.display = "block";
-//   else overlay.style.display = "none";
-// }
-
 closeButton.addEventListener("click", () => {
   iframe.style.display = "none";
 });
