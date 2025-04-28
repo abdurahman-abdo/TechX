@@ -83,12 +83,19 @@ hidden1Elements.forEach((element) => observer1.observe(element));
 const iframe = document.getElementById("signin-iframe");
 const button = document.getElementById("button");
 const overlay = document.getElementById("overlay");
+const closeButton = document.getElementById("close");
 
-button.addEventListener("click", showIframe);
+button.addEventListener("click", () => {
+  iframe.style.display = "block";
+});
 
-function showIframe() {
-  if ((iframe.style.display = "none")) iframe.style.display = "block";
-  else iframe.style.display = "none";
-  if ((overlay.style.display = "none")) overlay.style.display = "block";
-  else overlay.style.display = "none";
-}
+// function showIframe() {
+//   if ((iframe.style.display = "none")) iframe.style.display = "block";
+//   else iframe.style.display = "none";
+//   if ((overlay.style.display = "none")) overlay.style.display = "block";
+//   else overlay.style.display = "none";
+// }
+
+closeButton.addEventListener("click", (event) => {
+  iframe.style.display = "none";
+});
