@@ -44,3 +44,11 @@ function getCookie(name) {
 }
 
 console.log(document.cookie);
+
+const closeButton = document.getElementById("close");
+  const modal = document.querySelector(".wrapper");
+
+  closeButton.addEventListener("click", (event) => {
+    event.preventDefault(); // Prevents the default action of the anchor tag
+    modal.style.display = "none"; // Hides the modal
+  });
