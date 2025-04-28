@@ -96,6 +96,6 @@ button.addEventListener("click", () => {
 //   else overlay.style.display = "none";
 // }
 
-closeButton.addEventListener("click", (event) => {
+closeButton.addEventListener("click", () => {
   iframe.style.display = "none";
 });
