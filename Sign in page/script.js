@@ -44,3 +44,8 @@ function getCookie(name) {
 }
 
 console.log(document.cookie);
+
+const closeButton = document.getElementById("close");
+closeButton.addEventListener("click", () => {
+  window.parent.postMessage("closeOverlay", "*");
+});
