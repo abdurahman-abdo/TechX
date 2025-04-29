@@ -85,12 +85,13 @@ const button = document.getElementById("button");
 const overlay = document.getElementById("overlay");
 const closeButton = document.getElementById("close");
 
+console.log(closeButton);
+console.log(type of closeButton);
+
 button.addEventListener("click", () => {
-  iframe.style.display = "block"; 
   overlay.style.display = "block";
 });
 
 closeButton.addEventListener("click", () => {
-  iframe.style.display = "none"; 
   overlay.style.display = "none";
 });
