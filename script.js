@@ -85,8 +85,6 @@ const button = document.getElementById("button");
 const overlay = document.getElementById("overlay");
 const closeButton = document.getElementById("close");
 
-console.log(closeButton);
-
 button.addEventListener("click", () => {
   overlay.style.display = "block";
 });
