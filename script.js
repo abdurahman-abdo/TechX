@@ -86,7 +86,6 @@ const overlay = document.getElementById("overlay");
 const closeButton = document.getElementById("close");
 
 console.log(closeButton);
-console.log(type of closeButton);
 
 button.addEventListener("click", () => {
   overlay.style.display = "block";
