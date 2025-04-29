@@ -16,6 +16,21 @@ body {
     background: transparent;
 }
 
+#close {
+    background-color: transparent;
+    border: 1px solid rgb(0, 69, 139);
+    border-radius: 3px;
+    padding: 5px 5px;
+    color: rgb(0, 69, 139);
+    cursor: pointer;
+}
+
+#close:hover {
+    background-color: rgb(0, 69, 139);
+    color: #fff;
+    transition: 1s;
+}
+
 .wrapper {
     width: 420px;
     background: transparent;
