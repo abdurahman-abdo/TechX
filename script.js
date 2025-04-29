@@ -83,12 +83,13 @@ hidden1Elements.forEach((element) => observer1.observe(element));
 const iframe = document.getElementById("signin-iframe");
 const button = document.getElementById("button");
 const overlay = document.getElementById("overlay");
-const closeButton = document.getElementById("close");
 
 button.addEventListener("click", () => {
   overlay.style.display = "block";
 });
 
-closeButton.addEventListener("click", () => {
-  overlay.style.display = "none";
+window.addEventListener("message", (event) => {
+  if (event.data === "closeOverlay") {
+    overlay.style.display = "none";
+  }
 });
