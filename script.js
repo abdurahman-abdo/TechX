@@ -1,14 +1,14 @@
-const navLinks = document.getElementById("navLinks");
+const navLinks = document.querySelector(".nav-links");
+const showNav = document.querySelector(".showNav");
+const hideNav = document.querySelector(".hideNav");
 
-function showMenu() {
-  navLinks.style.display = "block";
-  navLinks.style.right = "0px";
-}
+showNav.addEventListener("click", () => {
+  navLinks.classList.add("active");
+});
 
-function hideMenu() {
-  navLinks.style.display = "none";
-  navLinks.style.right = "-200px";
-}
+hideNav.addEventListener("click", () => {
+  navLinks.classList.remove("active");
+});
 
 const observe = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
