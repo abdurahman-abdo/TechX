@@ -1,15 +1,3 @@
-const navLinks = document.querySelector(".nav-links");
-const showNav = document.querySelector(".showNav");
-const hideNav = document.querySelector(".hideNav");
-
-showNav.addEventListener("click", () => {
-  navLinks.classList.add("active");
-});
-
-hideNav.addEventListener("click", () => {
-  navLinks.classList.remove("active");
-});
-
 const observe = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     console.log(entry);
@@ -92,4 +80,16 @@ window.addEventListener("message", (event) => {
   if (event.data === "closeOverlay") {
     overlay.style.display = "none";
   }
+});
+
+const navLinks = document.querySelector(".nav-links");
+const showNav = document.querySelector(".showNav");
+const hideNav = document.querySelector(".hideNav");
+
+showNav.addEventListener("click", () => {
+  navLinks.classList.add("active");
+});
+
+hideNav.addEventListener("click", () => {
+  navLinks.classList.remove("active");
 });
